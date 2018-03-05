@@ -1,0 +1,9 @@
+/* Override the toolbar background color */
+.mat-toolbar.mat-primary {
+  background: #3c3f4e
+}
+
+/* make the material tab active */
+.current {
+  background-color: #000
+}
