@@ -7,10 +7,31 @@
   float: left;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 0px 5px 0px 5px;
+  margin: 10px 5px 0px 35px;
 }
 
 .active {
   color: #5f93e8;
   border-bottom: 3px solid #5f93e8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.materials li {
+  float: left;
+  margin: 20px 5px 5px 0px;
+  padding: 10px 5px 5px 0px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+#tag {
+  color: white;
+  background-color: green;
 }

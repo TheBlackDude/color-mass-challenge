@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OverviewService } from './overview.service';
+import { IMaterial } from './material';
 
 @Component({
   selector: 'app-overview',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor() { }
+  materials: IMaterial[];
+
+  constructor( private overView: OverviewService ) { }
 
   ngOnInit() {
+    this.getMaterials();
+  }
+
+  getMaterials(): void {
+    this.overView.getMaterials()
+      .subscribe(
+        data => this.materials = data,
+        error => console.log(error)
+      );
   }
 
 }
