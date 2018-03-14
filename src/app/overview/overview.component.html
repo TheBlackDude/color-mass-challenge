@@ -10,7 +10,7 @@
   <div class="materials">
     <ul>
       <li *ngFor="let material of materials">
-        <mat-card class="example-card">
+        <mat-card class="example-card" mat-raised-button (click)="openDialog(material.id)">
           <img mat-card-image src="{{material.gallery_image}}" alt="balls">
           <mat-card-content>
             <span>{{material.id}}</span><br>

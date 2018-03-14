@@ -34,7 +34,39 @@ export class InMemoryDataService implements InMemoryDbService {
         'tags': ['Paid'],
         'state': 'completed',
         'gallery_image': '../assets/images/shader-balls/mat0004.jpg'
-      }
+      },
+      {
+        'id': 5,
+        'name': 'Meterial 5',
+        'article_id': 'material5',
+        'tags': ['Paid'],
+        'state': 'completed',
+        'gallery_image': '../assets/images/shader-balls/mat0005.jpg'
+      },
+      {
+        'id': 6,
+        'name': 'Meterial 6',
+        'article_id': 'material6',
+        'tags': ['Paid'],
+        'state': 'completed',
+        'gallery_image': '../assets/images/shader-balls/mat0006.jpg'
+      },
+      {
+        'id': 7,
+        'name': 'Meterial 7',
+        'article_id': 'material7',
+        'tags': ['Paid'],
+        'state': 'completed',
+        'gallery_image': '../assets/images/shader-balls/mat0007.jpg'
+      },
+      {
+        'id': 8,
+        'name': 'Meterial 8',
+        'article_id': 'material8',
+        'tags': ['Paid'],
+        'state': 'completed',
+        'gallery_image': '../assets/images/shader-balls/mat0008.jpg'
+      },
     ];
     return {materials};
   }

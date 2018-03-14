@@ -5,6 +5,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -12,12 +13,14 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { OverviewComponent } from './overview/overview.component';
 import { OverviewService } from './overview/overview.service';
+import { DetailComponent } from './detail/detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    OverviewComponent
+    OverviewComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,11 @@ import { OverviewService } from './overview/overview.service';
     BrowserAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    DetailComponent
   ],
   providers: [OverviewService],
   bootstrap: [AppComponent]
